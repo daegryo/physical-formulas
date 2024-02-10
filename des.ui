@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>calculator</class>
+ <widget class="QMainWindow" name="calculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1184</width>
+    <height>677</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Физический калькулятор</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(239, 239, 227);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Сила тяжести</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Потенциальная энергия</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Кинетическая энергия</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Мощность</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Работа</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Давление на дно и стенки сосуда</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Давление</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Сила Архимеда</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Второй закон Ньютона</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Вес тела</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Масса</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Первая космическая скорость</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Период 2 вариант</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Период 1 вариант</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Угловая скорость </string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Центростремительное ускорение</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ускорение, при равноускоренном движении</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Путь, равноускоренное движение</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Скорость при равномерном движении</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="photoLabel">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>150</y>
+      <width>371</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resultButton">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>450</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Получить результат</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resultLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>471</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showButtton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>50</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 italic 12pt &quot;Times New Roman&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Показать </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="let1">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>160</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="let2">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>209</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="let3">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>239</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="let4">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>290</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="let5">
+    <property name="geometry">
+     <rect>
+      <x>66</x>
+      <y>330</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="let6">
+    <property name="geometry">
+     <rect>
+      <x>66</x>
+      <y>382</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="zn1">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>160</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 italic 12pt &quot;Times New Roman&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="zn2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>200</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 italic 12pt &quot;Times New Roman&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="zn3">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>250</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 italic 12pt &quot;Times New Roman&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="zn4">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>290</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 italic 12pt &quot;Times New Roman&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="zn5">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>330</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 italic 12pt &quot;Times New Roman&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="zn6">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>380</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 italic 12pt &quot;Times New Roman&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>46</x>
+      <y>109</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 bold 12pt &quot;Times New Roman&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Переменные</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>110</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 bold 12pt &quot;Times New Roman&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Значения</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>326</x>
+      <y>110</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 bold 12pt &quot;Times New Roman&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>СИ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="si1">
+    <property name="geometry">
+     <rect>
+      <x>326</x>
+      <y>160</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="si2">
+    <property name="geometry">
+     <rect>
+      <x>326</x>
+      <y>200</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="si3">
+    <property name="geometry">
+     <rect>
+      <x>326</x>
+      <y>250</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="si4">
+    <property name="geometry">
+     <rect>
+      <x>326</x>
+      <y>290</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="si5">
+    <property name="geometry">
+     <rect>
+      <x>326</x>
+      <y>330</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="si6">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>380</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 14pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gameButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>540</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Игра</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zadachiButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>580</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);font: 75 italic 12pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Задачи</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dopLabel">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>530</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);font:  12pt &quot;Times New Roman&quot;;
+text-decoration: underline;
+font: 75 bold 12pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Дополнительные разделы:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="helpButton">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>40</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 italic 12pt &quot;Times New Roman&quot;;
+background-color:rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Помощь?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="helpLabel">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>100</y>
+      <width>301</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1184</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
