@@ -53,6 +53,7 @@ class Physic(QMainWindow):
 
         # Создание курсора
         self.cur = self.con.cursor()
+
         self.zn1.setEnabled(False)
         self.zn2.setEnabled(False)
         self.zn3.setEnabled(False)
@@ -75,6 +76,7 @@ class Physic(QMainWindow):
         self.gameButton.clicked.connect(self.game)
         self.zadachiButton.clicked.connect(self.zadachi)
         self.helpButton.clicked.connect(self.help)
+
 
     def sh(self):
         self.parameter = self.comboBox.currentText()
