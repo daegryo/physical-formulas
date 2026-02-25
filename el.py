@@ -69,15 +69,15 @@ class El(QMainWindow):
         if self.parameter == "Электрическое поле":
             self.counter = 9
         elif self.parameter == "Постоянный электрический ток":
-            self.counter = 7
+            self.counter = 2
         elif self.parameter == "Магнитное поле":
             self.counter = 2
         elif self.parameter == "Электромагнитная индукция":
-            self.counter = 4
+            self.counter = 2
         elif self.parameter == "Электромагнитные колебания и волны":
             self.counter = 2
         elif self.parameter == "Геометрическая оптика":
-            self.counter = 6
+            self.counter = 2
         elif self.parameter == "Волновая оптика":
             self.counter = 0
 

@@ -32,7 +32,24 @@ class Mech(QMainWindow):
         self.text = self.comboBox.currentText()
        # self.theoryButton.clicked.connect(self.theory)
         self.backButton.clicked.connect(self.back)
+        self.nextButton.clicked.connect(self.next)
         self.showButton.clicked.connect(self.sh)
+        self.returnButton.clicked.connect(self.returnn)
+
+        with open(f"theory/5.txt", 'r', encoding='utf-8') as file:
+            text = file.read()
+            self.textLabel.setText(text)
+            self.textLabel.setStyleSheet(
+                """font: 13pt "Palatino Linotype";""")
+            self.textLabel.setTextFormat(Qt.RichText)
+        self.pixmap_formulas = QPixmap(f"images/theory/1/0.png")
+        self.photoLabel.setPixmap(self.pixmap_formulas)
+        self.photoLabel.setScaledContents(True)
+
+
+        self.flag = False
+        self.count = 0
+        self.counter = 0
 
 
 
@@ -44,8 +61,54 @@ class Mech(QMainWindow):
         self.theory_form.show()
 
     def sh(self):
-        self.text = self.comboBox.currentText()
-        self.textLabel.setText(self.text)
+        self.count = 0
+        self.flag = True
+        self.parameter = self.comboBox.currentText()
+        self.result = self.cur.execute(f"""SELECT * FROM mech
+                                        WHERE name = '{self.parameter}'""").fetchone()
+        if self.parameter == "Кинематика":
+            self.counter = 6
+        elif self.parameter == "Динамика":
+            self.counter = 5
+        elif self.parameter == "Двжиение по окружности":
+            self.counter = 5
+        elif self.parameter == "Статика":
+            self.counter = 3
+        elif self.parameter == "Законы сохранения":
+            self.counter = 5
+        elif self.parameter == "Меахнические колебания и волны":
+            self.counter = 6
+
+
+
+
+
+        with open(f"theory/{self.result[0]}.txt", 'r', encoding='utf-8') as file:
+            text = file.read()
+            self.textLabel.setText(text)
+            self.textLabel.setStyleSheet(
+                """font: 13pt "Palatino Linotype";""")
+        self.pixmap_formulas = QPixmap(f"images/theory/{self.result[2]}/{self.count}.png")
+        self.photoLabel.setPixmap(self.pixmap_formulas)
+        self.photoLabel.setScaledContents(True)
+
+    def next(self):
+        if self.count < self.counter and self.flag:
+            self.count += 1
+            self.pixmap_formulas = QPixmap(f"images/theory/{self.result[2]}/{self.count}.png")
+            self.photoLabel.setPixmap(self.pixmap_formulas)
+            self.photoLabel.setScaledContents(True)
+
+    def returnn(self):
+        if self.count>=1 and self.flag:
+            self.count -= 1
+            self.pixmap_formulas = QPixmap(f"images/theory/{self.result[2]}/{self.count}.png")
+            self.photoLabel.setPixmap(self.pixmap_formulas)
+            self.photoLabel.setScaledContents(True)
+
+
+
+
 
 
 

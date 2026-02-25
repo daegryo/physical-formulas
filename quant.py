@@ -66,11 +66,11 @@ class Quant(QMainWindow):
         self.result = self.cur.execute(f"""SELECT * FROM quant
                                         WHERE name = '{self.parameter}'""").fetchone()
         if self.parameter == "Корпускулярно-волновой дуализм":
-            self.counter = 4
+            self.counter = 2
         elif self.parameter == "Физика атома":
-            self.counter = 1
+            self.counter = 2
         elif self.parameter == "Физика атомного ядра":
-            self.counter = 1
+            self.counter = 2
 
 
 

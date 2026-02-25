@@ -5,6 +5,8 @@ from PyQt5.QtCore import Qt, QPropertyAnimation, QPoint, QEasingCurve
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from main import Physic
+from practise import Practise
+from prob import Prob
 from theory import Theory
 
 
@@ -32,12 +34,25 @@ class Choose(QMainWindow):
         self.logoLabel.setPixmap(self.pixmap)
 
         self.theoryButton.clicked.connect(self.theory)
+        self.practiseButton.clicked.connect(self.practise)
+        self.probButton.clicked.connect(self.prob)
+
         self.backButton.clicked.connect(self.back)
 
 
     def theory(self):
         self.close()
         self.main_form = Theory()
+        self.main_form.show()
+
+    def practise(self):
+        self.close()
+        self.main_form = Practise()
+        self.main_form.show()
+
+    def prob(self):
+        self.close()
+        self.main_form =Prob()
         self.main_form.show()
 
     def back(self):
