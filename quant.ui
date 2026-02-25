@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1937</width>
+    <height>1149</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="styleSheet">
+       <string notr="true">QSCrollBar:vertical{
+	boder:none;
+	
+	background-color: rgb(255, 239, 112);
+	width: 14px;
+	margin: 15px 0 15px 0;
+	boder-radius: 0px;
+}
+QScrollBar::handle:vertical{
+	background-color: rgb(86, 34, 103);
+	min-height: 30px;
+	border-radius: 7px;
+}
+
+QScrollBar::handle:vertical:hoverl{
+	
+	background-color: rgb(255, 85, 127);
+}
+
+QScrollBar::handle:vertical:pressed{
+	
+	background-color: rgb(55, 115, 255);
+}
+
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>5018</width>
+         <height>5018</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="minimumSize">
+           <size>
+            <width>5000</width>
+            <height>5000</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="logoLabel">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>30</y>
+             <width>301</width>
+             <height>71</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="backButton">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>40</y>
+             <width>171</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Sitka Text Semibold</family>
+             <pointsize>14</pointsize>
+             <weight>7</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255);
+color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+font: 63 14pt &quot;Sitka Text Semibold&quot;;
+border-radius: 7px;
+background-color: rgba(255, 255, 255);
+color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+font: 63 14pt &quot;Sitka Text Semibold&quot;;
+border-radius: 20px;
+
+border-width:3px;
+border-style: solid;
+border-color:  rgb(209, 182, 27);</string>
+           </property>
+           <property name="text">
+            <string>назад</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>30</y>
+             <width>511</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 30pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(82, 180, 17);
+color: rgb(255, 255, 255);
+	border-radius: 14px;</string>
+           </property>
+           <property name="text">
+            <string>Квантовая физика</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>110</y>
+             <width>481</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+border-radius: 7px;
+background-color: rgba(255, 255, 255);
+color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+font: 63 14pt &quot;Sitka Text Semibold&quot;;
+border-radius: 20px;
+
+border-width:3px;
+border-style: solid;
+border-color:  rgb(209, 182, 27);</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Корпускулярно-волновой дуализм</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Физика атома</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Физика атомного ядра</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="showButton">
+           <property name="geometry">
+            <rect>
+             <x>520</x>
+             <y>120</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(82, 180, 17);
+color: rgb(255, 255, 255);
+border-radius: 7px;</string>
+           </property>
+           <property name="text">
+            <string>показать</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="textLabel">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>210</y>
+             <width>3351</width>
+             <height>4051</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Palatino Linotype&quot;;</string>
+           </property>
+           <property name="text">
+            <string>4.1. Корпускулярно-волновой дуализм
+1. Гипотеза о квантах света
+Нагретые тела излучают свет в инфракрасном, видимом и ультрафиолетовом диапазонах. В опытах по интерференции и дифракции было установлено, что свет – это электромагнитные волны. По теории Максвелла электромагнитные волны излучают заряженные частицы, движущиеся с ускорением. В нагретом веществе – это электроны, движущиеся внутри атома.
+Из теории Максвелла следовало, что при увеличении частоты излучения (уменьшении длины волны) его интенсивность должна неограниченно возрастать. Но эксперименты показывали, что при уменьшении длины волны интенсивность излучения сначала увеличивается, а затем падает. У солнечного света максимум интенсивности попадает в середину спектра видимого света, а падение интенсивности происходит в ультрафиолетовой области. Падение интенсивности в ультрафиолетовой области теория Максвелла объяснить не сумела. Эту проблему назвали ультрафиолетовая катастрофа, это была катастрофа волновой теории света.
+Макс Планк предположил, что электроны излучают свет не непрерывно, а отдельными порциями – квантами, энергия которых пропорциональна частоте излучения
+
+где:	h = 6,6·10-34 Дж·с – постоянная Планка;
+Идея квантов позволила объяснить все законы теплового излучения. Она объясняет и ультрафиолетовую катастрофу: при большой частоте энергия кванта очень велика, и если у атома нет такой энергии, то он не может излучить квант света.
+
+2. Законы фотоэффекта
+Фотоэффект - это выбивание светом электронов из металла. Фотоэффект открыл Герц. Он исследовал радиоволны, излучаемые искровым разрядом, и заметил, что интенсивность искрения резко увеличивалась при облучении электродов ультрафиолетовым светом. Искрение увеличивали выбитые из металла электроны.
+Фотоэффект изучали несколько ученых, в том числе, русский ученый Столетов. Экспериментальная установка для изучения фотоэффекта представляла собой вакуумную трубку с двумя электродами, один из которых (катод) облучали светом. Электроны, выбитые из катода, создавали ток через трубку. При исследованиях определялось зависимость тока через трубку от электрического напряжения, частоты и интенсивности света.
+В результате экспериментов были установлены законы фотоэффекта:
+1) При постоянной частоте света количество выбитых электронов пропорционально интенсивности света;
+2) Максимальная кинетическая энергия выбитых электронов линейно возрастает с увеличением частоты света и не зависит от его интенсивности;
+3) Для каждого вещества существует минимальная частота света (красная граница фотоэффекта), ниже которой электроны не выбиваются при любой интенсивности света.
+В рамках волновой теории 2-й и 3-й законы фотоэффекта объяснить невозможно. Энергия электронов должна быть пропорциональна энергии света, то есть, его интенсивности, и не зависеть от частоты. А красной границы фотоэффекта быть не должно, так как при достаточно большой интенсивности электроны должны выбиваться при любой частоте света.
+
+
+
+
+
+Законы фотоэффекта объяснил Эйнштейн, используя идею квантов. Планк считал, что атом испускает свет отдельными порциями - квантами. Эйнштейн предположил, что при фотоэффекте свет поглощается также квантами – один электрон поглощает один квант света полностью. Энергия кванта тратится на работу выхода электрона из металла и кинетическую энергию вылетевшего электрона
+
+Формула Эйнштейна объясняет все три закона фотоэффекта:
+1) Количество выбитых электронов пропорционально количеству поглощенных квантов, то есть интенсивности света;
+2) Кинетическая энергия электрона в формуле Эйнштейна линейно зависит от частоты света, что и наблюдается на эксперименте. Кинетическая энергия выбитых электронов не зависит от интенсивности света, так как электрон поглощает только один квант. Максимальную кинетическую энергию электронов можно определить по задерживающей разности потенциалов на вакуумной трубке
+
+3) Если энергия кванта меньше работы выхода, то электроны не выбиваются. Частоту красной границы фотоэффекта можно определить по формуле
+
+Задачи на фотоэффект решают совместным применением формулы Эйнштейна, формулы задерживающей разности потенциалов и формулы красной границы фотоэффекта.
+Энергию кванта удобно выражать в электрон-вольтах 1 эВ = 1,6·10-19 Дж. В частности, энергия кванта видимого света лежит в диапазоне от 1,6 эВ (красный цвет) до 3,3 эВ (фиолетовый цвет). Красная граница у большинства металлов находится в ультрафиолетовой области, а у щелочных металлов – в видимой области. То есть, видимый свет из обычных металлов электроны не выбивает, а из щелочных металлов - выбивает. Поэтому катоды фотоэлементов покрывают щелочным металлом.
+
+Пример 1. При облучении катода светом с длиной волны λ = 300 нм фототок прекращается при напряжении между анодом и катодом U = 1,4 В. Определите красную границу фотоэффекта λ0 для вещества фотокатода.
+Решение. Записываем формулу Эйнштейна для фотоэффекта, формулу красной границы и формулу задерживающей разности потенциалов.
+				
+Отсюда получаем
+		
+
+Пример 2. Работа выхода электронов из алюминия составляет 3,74 эВ. Какой максимальный заряд может накопиться на поверхности алюминиевого шарика радиусом 0,9 мм, если облучать его светом с частотой 1,15·1015 Гц?
+
+
+Решение. При выбивании электронов у шарика накапливается положительный заряд, а потенциальная энергия выбитых электронов в электрическом поле шарика возрастает по модулю. Когда она сравняется с кинетической энергией, то механическая энергия выбитого электрона станет равной нулю. Такой электрон не сможет улететь в бесконечность, он вернется обратно на шарик. И тогда заряд шарика q перестанет увеличиваться.
+Для этого случая записываем формулу Эйнштейна для фотоэффекта и закон сохранения механической энергии электрона после выбивания его из шарика
+		
+Отсюда находим
+		
+
+3. Фотон
+По результатам многочисленных опытов было установлено, что свет всегда излучается отдельными квантами и поглощается отдельными квантами, а разделить квант на части невозможно. На части не делятся только элементарные частицы. Это означает, что квант света – это элементарная частица, которая получила имя фотон.
+Фотон – это уникальный объект, который имеет свойства и волны, и частицы (корпускулы). Совокупность двух разных способов описания фотона называют корпускулярно-волновым дуализмом. В некоторых предельных случаях удобна модель волны, а в некоторых – модель частицы. Например, при описании интерференции света используются волновые свойства фотона, а при объяснении фотоэффекта – корпускулярные свойства.
+Корпускулярные свойства фотона описываются формулой Планка 
+;
+Фотон - это безмассовая частица, которая всегда движется со скоростью света, поэтому связь энергии фотона с его импульсом имеет вид
+;
+Волновые свойства фотона описываются формулой длины волны
+.
+Задачи на свойства фотонов решают, в основном, по законам сохранения энергии и импульса:
+- задачи термодинамики на теплоту, выделяющуюся при поглощении света, решают по закону сохранения энергии, - эта теплота равна энергии поглощенных фотонов;
+- задачи механики на давление света решают по закону изменения импульса фотонов. В частности, из закона изменения импульса следует, что давление света на полностью отражающую поверхность будет в два раза больше, чем давление на полностью поглощающую поверхность.
+
+Пример 1. Электромагнитное излучение с длиной волны 3,3·10-7 м используется для нагревания воды массой 1 кг. Сколько времени потребуется для нагревания воды на 10 0С, если источник излучает 1020 фотонов за 1 с? Считать, что излучение полностью поглощается водой.
+Решение. Это задача на закон сохранения энергии - вода нагревается за счет энергии фотонов
+		 = 700 с
+
+
+Пример 2. На пластинку площадью S = 4 см2, которая отражает 70% и поглощает 30% падающего света, падает перпендикулярно свет с длиной волны λ = 600 нм. Мощность светового потока N = 120 Вт. Какое давление оказывает свет на пластинку?
+Решение. При отражении или поглощении света импульс пучка изменяется. Изменение импульса пучка равно импульсу силы давления пластинки на пучок
+
+По 3-му закону Ньютона с такой же силой пучок света давит на поверхность.
+При перпендикулярном падении и коэффициенте отражения света  k = 0,7 при энергии пучка света E = N·Δt получаем закон изменения импульса пучка
+	
+Тогда давления света равно
+
+Длина волны – лишнее данное, не нужное для решения данной задачи.
+</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="photoLabel">
+           <property name="geometry">
+            <rect>
+             <x>1350</x>
+             <y>30</y>
+             <width>301</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="returnButton">
+           <property name="geometry">
+            <rect>
+             <x>1380</x>
+             <y>180</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(209, 182, 27);
+color: rgb(255, 255, 255);
+border-radius: 7px;</string>
+           </property>
+           <property name="text">
+            <string>&lt;--</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="nextButton">
+           <property name="geometry">
+            <rect>
+             <x>1510</x>
+             <y>180</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(209, 182, 27);
+color: rgb(255, 255, 255);
+border-radius: 7px;</string>
+           </property>
+           <property name="text">
+            <string>--&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>1100</x>
+             <y>70</y>
+             <width>221</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255);
+color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+font: 63 14pt &quot;Sitka Text Semibold&quot;;
+border-radius: 7px;
+background-color: rgba(255, 255, 255);
+color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+font: 63 14pt &quot;Sitka Text Semibold&quot;;
+border-radius: 20px;
+
+border-width:3px;
+border-style: solid;
+border-color:  rgb(209, 182, 27);</string>
+           </property>
+           <property name="text">
+            <string>Формулы---&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>1340</x>
+             <y>20</y>
+             <width>321</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 30pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(82, 180, 17);
+color: rgb(255, 255, 255);
+	border-radius: 14px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <zorder>label_4</zorder>
+          <zorder>logoLabel</zorder>
+          <zorder>backButton</zorder>
+          <zorder>label</zorder>
+          <zorder>comboBox</zorder>
+          <zorder>showButton</zorder>
+          <zorder>textLabel</zorder>
+          <zorder>photoLabel</zorder>
+          <zorder>returnButton</zorder>
+          <zorder>nextButton</zorder>
+          <zorder>label_3</zorder>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1937</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

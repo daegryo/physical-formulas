@@ -1,0 +1,2248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1937</width>
+    <height>926</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="styleSheet">
+       <string notr="true">QSCrollBar:vertical{
+	boder:none;
+	
+	background-color: rgb(255, 239, 112);
+	width: 14px;
+	margin: 15px 0 15px 0;
+	boder-radius: 0px;
+}
+QScrollBar::handle:vertical{
+	background-color: rgb(86, 34, 103);
+	min-height: 30px;
+	border-radius: 7px;
+}
+
+QScrollBar::handle:vertical:hoverl{
+	
+	background-color: rgb(255, 85, 127);
+}
+
+QScrollBar::handle:vertical:pressed{
+	
+	background-color: rgb(55, 115, 255);
+}
+
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>5018</width>
+         <height>5018</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>5000</width>
+            <height>5000</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <widget class="QLabel" name="numLabel">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>280</y>
+             <width>121</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255);
+color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+font: 63 22pt &quot;Sitka Text Semibold&quot;;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="decisionLabel">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>810</y>
+             <width>841</width>
+             <height>621</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>190</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+           </property>
+           <property name="text">
+            <string>ответ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>840</x>
+             <y>190</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+           </property>
+           <property name="text">
+            <string>ответ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>260</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+           </property>
+           <property name="text">
+            <string>ответ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>840</x>
+             <y>260</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+           </property>
+           <property name="text">
+            <string>ответ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>840</x>
+             <y>400</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+           </property>
+           <property name="text">
+            <string>ответ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>840</x>
+             <y>330</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+           </property>
+           <property name="text">
+            <string>ответ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>400</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+           </property>
+           <property name="text">
+            <string>ответ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>330</y>
+             <width>271</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+           </property>
+           <property name="text">
+            <string>ответ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="geometry">
+            <rect>
+             <x>-120</x>
+             <y>-10</y>
+             <width>5000</width>
+             <height>5000</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>5000</width>
+             <height>5000</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <widget class="QPushButton" name="backButton">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>40</y>
+              <width>171</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Sitka Text Semibold</family>
+              <pointsize>14</pointsize>
+              <weight>7</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgba(255, 255, 255);
+                color: rgb(0, 0, 0);
+                font: 63 14pt &quot;Sitka Text Semibold&quot;;
+                border-radius: 20px;
+
+                border-width:3px;
+                border-style: solid;
+                border-color:  rgb(132, 111, 85);</string>
+            </property>
+            <property name="text">
+             <string>назад</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_10">
+            <property name="geometry">
+             <rect>
+              <x>610</x>
+              <y>20</y>
+              <width>891</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 18pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(132, 111, 85);
+color: rgb(255, 255, 255);
+	border-radius: 14px;</string>
+            </property>
+            <property name="text">
+             <string>Итоги</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y1">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>190</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgba(145, 0, 0,100);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r1">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>190</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y2">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>260</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgba(45, 143, 34, 100);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r2">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>260</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r4">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>400</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r3">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>330</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y4">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>400</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y3">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>330</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgba(211, 205, 29, 100);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y8">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>680</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y5">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>470</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r8">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>680</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y6">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>540</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r7">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>610</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r6">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>540</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y7">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>610</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r5">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>470</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y12">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>960</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y13">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1030</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r14">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1100</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y9">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>750</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r12">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>960</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y14">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1100</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y15">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1170</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r11">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>890</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r10">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>820</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r15">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1170</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y16">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1240</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r9">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>750</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y11">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>890</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r13">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1030</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r16">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1240</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y18">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1380</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y17">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1310</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r19">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1450</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y19">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1450</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y20">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1520</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y21">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1590</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r20">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1520</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r18">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1380</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r17">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1310</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r21">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1590</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y10">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>820</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_33">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>190</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>1</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_54">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>260</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>2</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_55">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>330</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>3</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_56">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>400</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>4</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_57">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>540</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>6</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_58">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>470</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>5</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_59">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>890</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>11</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_60">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>960</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>12</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_61">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>610</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>7</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_62">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>750</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>9</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_63">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>820</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>10</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_64">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>680</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>8</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_65">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1310</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>17</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_66">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1380</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>18</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_67">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1030</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>13</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_68">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1170</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>15</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_69">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1240</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>16</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_70">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1100</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>14</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r22">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1660</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r23">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1730</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r24">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1800</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y22">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1660</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y23">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1730</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y24">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1800</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_77">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1450</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>19</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_78">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1590</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(213, 197, 197);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>21</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_79">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1520</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(211, 210, 201);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>20</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_80">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1660</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(213, 197, 197);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>22</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_81">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1730</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(213, 197, 197);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>23</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_82">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1870</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(213, 197, 197);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>25</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_83">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1800</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(213, 197, 197);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>24</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_84">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>1940</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(213, 197, 197);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>26</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r25">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1870</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y26">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1940</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="y25">
+            <property name="geometry">
+             <rect>
+              <x>550</x>
+              <y>1870</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r26">
+            <property name="geometry">
+             <rect>
+              <x>840</x>
+              <y>1940</y>
+              <width>271</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 20px;</string>
+            </property>
+            <property name="text">
+             <string>ответ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="r1_3">
+            <property name="geometry">
+             <rect>
+              <x>1230</x>
+              <y>190</y>
+              <width>1131</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 17pt &quot;Sitka Text Semibold&quot;;
+background-color: rgba(98, 0, 0, 220);
+color: rgb(255, 255, 255);
+border-radius:15px;</string>
+            </property>
+            <property name="text">
+             <string>Проверьте самостоятельно вторую часть!</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="kritLabel">
+            <property name="geometry">
+             <rect>
+              <x>1850</x>
+              <y>270</y>
+              <width>511</width>
+              <height>761</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="checkButton">
+            <property name="geometry">
+             <rect>
+              <x>2120</x>
+              <y>1060</y>
+              <width>241</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(212, 205, 176);
+color: rgb(0, 0, 0);
+border-radius: 7px;</string>
+            </property>
+            <property name="text">
+             <string>засчитать</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="answerEdit">
+            <property name="geometry">
+             <rect>
+              <x>1850</x>
+              <y>1060</y>
+              <width>261</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgba(255, 255, 255);
+color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgba(194, 194, 194, 100);
+border-radius: 3px;
+</string>
+            </property>
+            <property name="text">
+             <string>введите баллы</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="photoLabel">
+            <property name="geometry">
+             <rect>
+              <x>1230</x>
+              <y>270</y>
+              <width>571</width>
+              <height>761</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+font: 63 22pt &quot;Sitka Text Semibold&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="returnButton">
+            <property name="geometry">
+             <rect>
+              <x>1260</x>
+              <y>1060</y>
+              <width>261</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgba(98, 0, 0, 220);
+color: rgb(255, 255, 255);
+border-radius: 7px;</string>
+            </property>
+            <property name="text">
+             <string>&lt;--</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="nextButton">
+            <property name="geometry">
+             <rect>
+              <x>1530</x>
+              <y>1060</y>
+              <width>251</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgba(98, 0, 0, 220);
+color: rgb(255, 255, 255);
+border-radius: 7px;</string>
+            </property>
+            <property name="text">
+             <string>--&gt;</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="logoLabel">
+            <property name="geometry">
+             <rect>
+              <x>370</x>
+              <y>30</y>
+              <width>231</width>
+              <height>61</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1937</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
