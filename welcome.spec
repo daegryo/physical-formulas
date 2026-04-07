@@ -4,7 +4,7 @@
 a = Analysis(
     ['welcome.py'],
     pathex=[],
-    binaries=[('C:\\Users\\...\\site-packages\\torch\\lib\\*.dll', '.\\torch\\lib')],
+    binaries=[],
     datas=[],
     hiddenimports=[],
     hookspath=[],
@@ -12,6 +12,7 @@ a = Analysis(
     runtime_hooks=[],
     excludes=[],
     noarchive=False,
+    optimize=0,
 )
 pyz = PYZ(a.pure)
 
@@ -21,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='main',
+    name='welcome',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -34,5 +35,4 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['graphics\\Sky.ico'],
 )

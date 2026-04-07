@@ -472,6 +472,113 @@ color: rgb(255, 255, 255);
             <string/>
            </property>
           </widget>
+          <widget class="QPushButton" name="speakButton">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>190</y>
+             <width>181</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(76, 0, 152);
+color: rgb(255, 255, 255);
+border-radius: 17px;</string>
+           </property>
+           <property name="text">
+            <string>озвучить текст</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="speed05Button">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>190</y>
+             <width>81</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+border-radius: 7px;
+border-radius: 17px;
+
+border-width:3px;
+border-style: solid;
+border-color:rgb(76, 0, 152);</string>
+           </property>
+           <property name="text">
+            <string>0.5x</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="speed1Button">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>190</y>
+             <width>81</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+border-radius: 7px;
+border-radius: 17px;
+
+border-width:3px;
+border-style: solid;
+border-color:rgb(76, 0, 152);</string>
+           </property>
+           <property name="text">
+            <string>1x</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="speed2Button">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>190</y>
+             <width>81</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+border-radius: 7px;
+border-radius: 17px;
+
+border-width:3px;
+border-style: solid;
+border-color:rgb(76, 0, 152);</string>
+           </property>
+           <property name="text">
+            <string>2x</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="stopButton">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>190</y>
+             <width>141</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(76, 0, 152);
+color: rgb(255, 255, 255);
+border-radius: 17px;</string>
+           </property>
+           <property name="text">
+            <string>стоп</string>
+           </property>
+          </widget>
           <zorder>label_3</zorder>
           <zorder>logoLabel</zorder>
           <zorder>backButton</zorder>
@@ -483,6 +590,11 @@ color: rgb(255, 255, 255);
           <zorder>returnButton</zorder>
           <zorder>nextButton</zorder>
           <zorder>label_2</zorder>
+          <zorder>speakButton</zorder>
+          <zorder>speed05Button</zorder>
+          <zorder>speed1Button</zorder>
+          <zorder>speed2Button</zorder>
+          <zorder>stopButton</zorder>
          </widget>
         </item>
        </layout>

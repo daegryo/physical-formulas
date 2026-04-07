@@ -57,7 +57,7 @@ QScrollBar::handle:vertical:pressed{
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>0</y>
+         <y>-31</y>
          <width>5018</width>
          <height>5018</height>
         </rect>
@@ -83,9 +83,9 @@ QScrollBar::handle:vertical:pressed{
           <widget class="QLabel" name="logoLabel">
            <property name="geometry">
             <rect>
-             <x>260</x>
+             <x>280</x>
              <y>20</y>
-             <width>311</width>
+             <width>281</width>
              <height>81</height>
             </rect>
            </property>
@@ -96,10 +96,10 @@ QScrollBar::handle:vertical:pressed{
           <widget class="QPushButton" name="backButton">
            <property name="geometry">
             <rect>
-             <x>20</x>
-             <y>30</y>
-             <width>221</width>
-             <height>51</height>
+             <x>40</x>
+             <y>40</y>
+             <width>171</width>
+             <height>41</height>
             </rect>
            </property>
            <property name="font">
@@ -119,156 +119,91 @@ QScrollBar::handle:vertical:pressed{
 
                 border-width:3px;
                 border-style: solid;
-                border-color: rgb(37, 181, 172);</string>
+                border-color:rgb(3, 3, 130);</string>
            </property>
            <property name="text">
             <string>назад</string>
            </property>
           </widget>
-          <widget class="QLabel" name="label">
+          <widget class="QLabel" name="textLabel">
            <property name="geometry">
             <rect>
-             <x>730</x>
-             <y>30</y>
-             <width>311</width>
-             <height>81</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">font: 63 30pt &quot;Sitka Text Semibold&quot;;
-background-color: rgb(34, 146, 186);
-color: rgb(255, 255, 255);
-	border-radius: 14px;</string>
-           </property>
-           <property name="text">
-            <string>    Пробники</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="numLabel">
-           <property name="geometry">
-            <rect>
-             <x>310</x>
-             <y>280</y>
-             <width>121</width>
-             <height>41</height>
+             <x>70</x>
+             <y>250</y>
+             <width>1671</width>
+             <height>1201</height>
             </rect>
            </property>
            <property name="styleSheet">
             <string notr="true">background-color: rgba(255, 255, 255);
 color: rgb(0, 0, 0);
 border-color: rgb(255, 255, 255);
-font: 63 22pt &quot;Sitka Text Semibold&quot;;</string>
+font: 63 16pt &quot;Sitka Text Semibold&quot;;
+ border-radius: 20px;
+
+                border-width:3px;
+                border-style: solid;
+                border-color:rgb(3, 3, 130);</string>
            </property>
            <property name="text">
-            <string/>
+            <string>Ответ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
            </property>
           </widget>
-          <widget class="QLabel" name="decisionLabel">
+          <widget class="QLineEdit" name="answerEdit">
            <property name="geometry">
             <rect>
-             <x>510</x>
-             <y>810</y>
-             <width>841</width>
-             <height>621</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="oneButton">
-           <property name="geometry">
-            <rect>
-             <x>580</x>
-             <y>190</y>
-             <width>611</width>
-             <height>101</height>
+             <x>390</x>
+             <y>140</y>
+             <width>991</width>
+             <height>51</height>
             </rect>
            </property>
            <property name="styleSheet">
-            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
-background-color: rgb(37, 181, 172);
-color: rgb(255, 255, 255);
-border-radius: 14px;</string>
+            <string notr="true">background-color: rgba(255, 255, 255);
+color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+font: 63 14pt &quot;Sitka Text Semibold&quot;;
+background-color: rgba(194, 194, 194, 100);
+border-radius: 3px;
+</string>
            </property>
            <property name="text">
-            <string>Пробный вариант ЕГЭ 2025 от ЕГКР В956 </string>
+            <string>вопрос...</string>
            </property>
           </widget>
-          <widget class="QPushButton" name="twoButton">
+          <widget class="QPushButton" name="sendButton">
            <property name="geometry">
             <rect>
-             <x>580</x>
-             <y>320</y>
-             <width>611</width>
-             <height>101</height>
+             <x>1410</x>
+             <y>140</y>
+             <width>141</width>
+             <height>51</height>
             </rect>
            </property>
-           <property name="styleSheet">
-            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
-background-color: rgb(37, 181, 172);
-color: rgb(255, 255, 255);
-border-radius: 14px;</string>
-           </property>
-           <property name="text">
-            <string>Пробный вариант ЕГЭ 2025 от ЕГКР В955</string>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="threeButton">
-           <property name="geometry">
-            <rect>
-             <x>580</x>
-             <y>450</y>
-             <width>611</width>
-             <height>101</height>
-            </rect>
+           <property name="font">
+            <font>
+             <family>Sitka Text Semibold</family>
+             <pointsize>14</pointsize>
+             <weight>7</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
-background-color: rgb(37, 181, 172);
-color: rgb(255, 255, 255);
-border-radius: 14px;</string>
+            <string notr="true">background-color:rgb(3, 3, 130);
+                color: rgb(255, 255, 255);
+                font: 63 14pt &quot;Sitka Text Semibold&quot;;
+                border-radius: 20px;
+
+                border-width:3px;
+                border-style: solid;
+                border-color:rgb(3, 3, 130);</string>
            </property>
            <property name="text">
-            <string>Вариант ЕГЭ 2025 | Основная волна резерв | Москва</string>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="fourButton">
-           <property name="geometry">
-            <rect>
-             <x>580</x>
-             <y>590</y>
-             <width>611</width>
-             <height>101</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
-background-color: rgb(37, 181, 172);
-color: rgb(255, 255, 255);
-border-radius: 14px;</string>
-           </property>
-           <property name="text">
-            <string>Вариант ЕГЭ 2025 | Досрочная волна</string>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="returnButton_9">
-           <property name="geometry">
-            <rect>
-             <x>750</x>
-             <y>1020</y>
-             <width>611</width>
-             <height>101</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">font: 63 14pt &quot;Sitka Text Semibold&quot;;
-background-color: rgb(37, 181, 172);
-color: rgb(255, 255, 255);
-border-radius: 14px;</string>
-           </property>
-           <property name="text">
-            <string>Вариант ЕГЭ 2025 | Основная волна резерв | Сибирь</string>
+            <string>отправить</string>
            </property>
           </widget>
          </widget>

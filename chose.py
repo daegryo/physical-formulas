@@ -1,9 +1,12 @@
 import sys
 import sqlite3
+from venSpeakerPy import lib_speak
 from PyQt5 import uic
 from PyQt5.QtCore import Qt, QPropertyAnimation, QPoint, QEasingCurve
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
+
+from ask import Ask
 from main import Physic
 from practise import Practise
 from prob import Prob
@@ -25,6 +28,9 @@ class Choose(QMainWindow):
         uic.loadUi('choose.ui', self)
         print("UI загружен успешно")
 
+        self.setWindowIcon(QIcon("images/logo_small.png"))
+        self.setWindowTitle("СмартЕгэ")
+
         self.con = sqlite3.connect('data.sqlite')
         self.cur = self.con.cursor()
 
@@ -36,7 +42,7 @@ class Choose(QMainWindow):
         self.theoryButton.clicked.connect(self.theory)
         self.practiseButton.clicked.connect(self.practise)
         self.probButton.clicked.connect(self.prob)
-
+        self.askButton.clicked.connect(self.ask)
         self.backButton.clicked.connect(self.back)
 
 
@@ -54,6 +60,12 @@ class Choose(QMainWindow):
         self.close()
         self.main_form =Prob()
         self.main_form.show()
+
+    def ask(self):
+        self.close()
+        self.main_form =Ask()
+        self.main_form.show()
+
 
     def back(self):
         from welcome import Welcome

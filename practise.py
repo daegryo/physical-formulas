@@ -4,7 +4,7 @@ from tabnanny import check
 
 from PyQt5 import uic
 from PyQt5.QtCore import Qt, QPropertyAnimation, QPoint, QEasingCurve
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 
 
@@ -33,6 +33,9 @@ class Practise(QMainWindow):
         super().__init__()
         uic.loadUi('practise.ui', self)
         print("UI загружен успешно")
+
+        self.setWindowIcon(QIcon("images/logo_small.png"))
+        self.setWindowTitle("СмартЕгэ")
 
         self.con = sqlite3.connect('data.sqlite')
         self.cur = self.con.cursor()

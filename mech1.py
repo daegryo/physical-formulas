@@ -3,7 +3,7 @@ import sys
 import sqlite3
 from PyQt5 import uic
 from PyQt5.QtCore import Qt, QPropertyAnimation, QPoint, QEasingCurve, right
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from main import Physic
 
@@ -22,6 +22,9 @@ class Mech1(QMainWindow):
         super().__init__()
         uic.loadUi('mech1.ui', self)
         print("UI загружен успешно")
+
+        self.setWindowIcon(QIcon("images/logo_small.png"))
+        self.setWindowTitle("СмартЕгэ")
 
         self.con = sqlite3.connect('data.sqlite')
         self.cur = self.con.cursor()
@@ -376,11 +379,13 @@ class Mech1(QMainWindow):
                 border-color:rgb(222, 177, 14);
                     """)
             image_path = f"images/practise/mech/decision/{self.result[self.count][5]}"
+
             if os.path.exists(image_path) and self.result[self.count][5] != "0":
+
                 self.pixmap_decision = QPixmap(image_path)
-                if not self.pixmap_formulas.isNull():
-                    self.decisionLabel.setPixmap(self.pixmap_decision)
-                    self.decisionLabel.setScaledContents(True)
+            #    if self.pixmap_formulas.isNull():
+                self.decisionLabel.setPixmap(self.pixmap_decision)
+                self.decisionLabel.setScaledContents(True)
 
 
 

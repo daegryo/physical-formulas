@@ -1,7 +1,10 @@
+import torch
+import multiprocessing
 import sys
 import sqlite3
+from venSpeakerPy import lib_speak
 from PyQt5 import uic
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QIcon
 from PyQt5.QtCore import Qt, QPropertyAnimation, QPoint, QEasingCurve
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 
@@ -28,6 +31,9 @@ class Welcome(QMainWindow):
         self.pixmap = QPixmap("images/logo.jpg")
         self.photoLabel.setPixmap(self.pixmap)
 
+        self.setWindowIcon(QIcon("images/logo_small.png"))
+        self.setWindowTitle("СмартЕгэ")
+
 
 
         self.pushButton.clicked.connect(self.sh)
@@ -36,16 +42,12 @@ class Welcome(QMainWindow):
 
     def setup_animation(self):
         try:
-            # Увеличиваем длительность для видимости
             self.animation = QPropertyAnimation(self.photoLabel, b"pos")
             self.animation.setDuration(2000)  # 2 секунды
             self.animation.setStartValue(self.photoLabel.pos())
-            # Двигаем не слишком далеко
             end_pos = self.photoLabel.pos() + QPoint(350, 0)
             self.animation.setEndValue(end_pos)
-            # Добавляем эффекты для плавности
             self.animation.setEasingCurve(QEasingCurve.InOutQuad)
-            # Запускаем анимацию
             self.animation.start()
         except Exception as e:
             print(f"Ошибка анимации: {e}")
@@ -59,6 +61,7 @@ class Welcome(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+    multiprocessing.freeze_support()
     form = Welcome()
     form.show()
     sys.excepthook = except_hook

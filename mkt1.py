@@ -3,7 +3,7 @@ import sys
 import sqlite3
 from PyQt5 import uic
 from PyQt5.QtCore import Qt, QPropertyAnimation, QPoint, QEasingCurve, right
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from main import Physic
 
@@ -22,6 +22,9 @@ class Mkt1(QMainWindow):
         super().__init__()
         uic.loadUi('mkt1.ui', self)
         print("UI загружен успешно")
+
+        self.setWindowIcon(QIcon("images/logo_small.png"))
+        self.setWindowTitle("СмартЕгэ")
 
         self.con = sqlite3.connect('data.sqlite')
         self.cur = self.con.cursor()
@@ -361,9 +364,9 @@ class Mkt1(QMainWindow):
                     background-color: rgba(181, 0, 0, 100);
                     border-radius: 3px;
                     """)
-        if self.num == 21 or self.num==23 or self.num == 24:
-            self.decisionLabell.setText("Решение")
-            self.decisionLabell.setStyleSheet(
+
+        self.decisionLabell.setText("Решение")
+        self.decisionLabell.setStyleSheet(
                 """background-color: rgba(255, 255, 255);
                 color: rgb(0, 0, 0);
                 font: 63 14pt "Sitka Text Semibold";
@@ -373,12 +376,12 @@ class Mkt1(QMainWindow):
                 border-style: solid;
                 border-color: rgba(172, 139, 255, 240);
                     """)
-            image_path = f"images/practise/mkt/decision/{self.result[self.count][5]}"
-            if os.path.exists(image_path) and self.result[self.count][5] != "0":
-                self.pixmap_decision = QPixmap(image_path)
-                if not self.pixmap_formulas.isNull():
-                    self.decisionLabel.setPixmap(self.pixmap_decision)
-                    self.decisionLabel.setScaledContents(True)
+        image_path = f"images/practise/mkt/decision/{self.result[self.count][5]}"
+        if os.path.exists(image_path) and self.result[self.count][5] != "0":
+            self.pixmap_decision = QPixmap(image_path)
+            if self.pixmap_formulas.isNull():
+                self.decisionLabel.setPixmap(self.pixmap_decision)
+                self.decisionLabel.setScaledContents(True)
 
 
 

@@ -3,7 +3,7 @@ import sys
 import sqlite3
 from PyQt5 import uic
 from PyQt5.QtCore import Qt, QPropertyAnimation, QPoint, QEasingCurve, right
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from main import Physic
 
@@ -22,6 +22,8 @@ class El1(QMainWindow):
         super().__init__()
         uic.loadUi('el1.ui', self)
         print("UI загружен успешно")
+        self.setWindowIcon(QIcon("images/logo_small.png"))
+        self.setWindowTitle("СмартЕгэ")
 
         self.con = sqlite3.connect('data.sqlite')
         self.cur = self.con.cursor()

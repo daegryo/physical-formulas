@@ -3,7 +3,7 @@ import sys
 import sqlite3
 from PyQt5 import uic
 from PyQt5.QtCore import Qt, QPropertyAnimation, QPoint, QEasingCurve, right
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 
 from finish import Finish
@@ -24,6 +24,9 @@ class Var(QMainWindow):
         super().__init__()
         uic.loadUi('var.ui', self)
         print("UI загружен успешно")
+
+        self.setWindowIcon(QIcon("images/logo_small.png"))
+        self.setWindowTitle("СмартЕгэ")
 
         self.con = sqlite3.connect('data.sqlite')
         self.cur = self.con.cursor()
@@ -140,6 +143,7 @@ class Var(QMainWindow):
         self.practise_form.show()
 
     def next(self):
+        self.photoLabel.clear()
         self.decisionLabel.clear()
         self.answerEdit.clear()
         if self.k + 1 < 26 and self.flag:
@@ -192,13 +196,13 @@ class Var(QMainWindow):
                             st = ''
             self.textLabel.setText(f'{"".join(note)}')
 
-            if self.num+1 != 5 and self.num+1 != 6 and self.num+1 != 18 and self.num+1 != 26 and self.num+1 != 21 and self.num+1 != 23 and self.num+1 != 18 and self.num+1 != 25 and self.num+1 != 14 and self.num+1 != 15:
+            if self.num+1 != 5 and self.num+1 != 6 and self.num+1 != 18 and self.num+1 != 26 and self.num+1 != 21 and self.num+1 != 23 and self.num+1 != 18 and self.num+1 != 25 and self.num+1 != 14 and self.num+1 != 15 and self.num+1 != 9 and self.num+1!=24:
                 self.textLabel.setStyleSheet(
                     """font: 14pt "Palatino Linotype";""")
             else:
 
                 self.textLabel.setStyleSheet(
-                    """font: 10pt "Palatino Linotype";""")
+                    """font: 11pt "Palatino Linotype";""")
             self.answerEdit.setStyleSheet(
                 """background-color: rgba(255, 255, 255);
                     color: rgb(0, 0, 0);
